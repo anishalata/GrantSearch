@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Row Details</title>
+</head>
+<body>
+    <h1>Row Details</h1>
+    <table>
+        {% for key, value in row.items() %}
+        <tr>
+            <th>{{ key }}</th>
+            <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back to Search</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <style>
+        table {width: 100%; border-collapse: collapse;}
+        th, td {padding: 10px; border: 1px solid #ddd;}
+        th {background-color: #f2f2f2;}
+    </style>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <div>
+        {% if tables %}
+        {% for table in tables %}
+        {{ table | safe }}
+        {% endfor %}
+        {% else %}
+        <p>No results found.</p>
+        {% endif %}
+    </div>
+    <a href="/">Back to Search</a>
+</body>
+</html>
